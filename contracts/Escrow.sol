@@ -26,7 +26,7 @@ contract Escrow {
     }
 
     modifier onlyFreelancer() {
-        require(msg.sender == freelancer, "access restricted to recruiter");
+        require(msg.sender == freelancer, "access restricted to freelancer");
         _;
     }
     modifier onlyRecruiter() {
